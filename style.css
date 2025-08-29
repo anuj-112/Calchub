@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('src/assets/bg1.jpg') no-repeat center center fixed;
+    color: #0ff148;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    padding:30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(212, 18, 18, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.operations {
+    padding: 100px 20px;
+}
+
+.operations h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.operation-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background: #ffea00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.operation-buttons .btn:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* Logo */
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a.about-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+header nav ul li a.about-link:hover {
+    background: #ffea00;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.about-page {
+    padding: 80px 20px;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-container .photo img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.about-container .details {
+    max-width: 600px;
+}
+
+.details h2, .details h3 {
+    color: #ffea00;
+}
+
+.details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.details ul li {
+    margin-bottom: 10px;
+}
+
+/* Make responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-container .photo img {
+        width: 200px;
+    }
+
+    .details {
+        text-align: center;
+    }
+}
